@@ -12,4 +12,7 @@ import javax.swing.*;
  */
 public class YoutubeUI {
 
+    YoutubeUI() {
+    }
+
 }
