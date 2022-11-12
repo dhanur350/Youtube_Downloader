@@ -19,6 +19,7 @@ public class YoutubeUI {
     YoutubeUI() {
         JFrame frame = new JFrame();
         urlLinkbox = new JTextField("Enter your URL", 10);
+        urlLinkbox.setBounds(100, 80, 400, 50);
         frame.add(urlLinkbox);
         frame.setSize(800, 500);
         frame.setLayout(null);
