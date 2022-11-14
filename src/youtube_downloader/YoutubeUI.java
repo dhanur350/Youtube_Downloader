@@ -5,6 +5,7 @@
 package youtube_downloader;
 
 import javax.swing.*;
+import java.awt.*;
 
 /**
  *
@@ -18,9 +19,14 @@ public class YoutubeUI {
 
     YoutubeUI() {
         JFrame frame = new JFrame();
+        JFrame jframe = new JFrame("YouTube Downloader");
+        jframe.setPreferredSize(new Dimension(400, 300));
         urlLinkbox = new JTextField("Enter your URL", 10);
-        urlLinkbox.setBounds(100, 80, 400, 50);
+        downloadLoc = new JTextField("Enter the location to store Video", 10);
+        urlLinkbox.setBounds(150, 140, 400, 50);//x,y,width,height
+        downloadLoc.setBounds(150, 200, 400, 50);
         frame.add(urlLinkbox);
+        frame.add(downloadLoc);
         frame.setSize(800, 500);
         frame.setLayout(null);
         frame.setVisible(true);
